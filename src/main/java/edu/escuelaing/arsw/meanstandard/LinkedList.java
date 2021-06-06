@@ -209,7 +209,13 @@ public class LinkedList<E> implements List<E>, Deque<E>, Cloneable, Serializable
 
     @Override
     public E get(int index) {
-        return null;
+        int k = index;
+        LinkedListNode<E> value = first;
+        while(k>0){
+            value = value.getNext();
+            k-=1;
+        }
+        return value.getValue();
     }
 
     @Override

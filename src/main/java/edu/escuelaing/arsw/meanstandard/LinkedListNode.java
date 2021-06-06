@@ -14,6 +14,10 @@ public class LinkedListNode<T> {
         next = null;
     }
 
+    public LinkedListNode<T> getNext(){
+        return next;
+    }
+
     public void nextNode(LinkedListNode<T> element){
         next = element;
     }
